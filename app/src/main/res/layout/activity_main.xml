@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/background"
+    tools:context="com.example.usuario.ejemplo1a.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/negro"
+        android:alpha="0.4">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/blanco"
+
+                    android:hint="Correo Electronico"
+
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/et_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/blanco"
+
+                    android:hint="Contraseña"
+                    android:padding="10dp" />
+
+                <Button
+                    android:id="@+id/btn_ingresa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/celeste"
+                    android:textAllCaps="false"
+                    android:text="Ingresa" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:textAllCaps="false"
+                    android:background="@color/azul"
+android:id="@+id/btn_facebook"
+                    android:text="Ingresa con Facebook" />
+
+                <TextView
+                    android:id="@+id/tv_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="Olvidaste Contraseña"
+
+                    android:textAlignment="center" />
+
+                <Button
+                              android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_register"
+                    android:textAllCaps="false"
+                    android:text="Registrate"
+                    android:textStyle="bold"
+                    android:textColor="@color/blanco" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
