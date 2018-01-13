@@ -1,5 +1,6 @@
 package com.example.usuario.ejemplo1a;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -45,7 +46,12 @@ public class BotonesButterknife extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn_ingresa:
-                tvText.setText("INGRESABUTTER");
+                // tvText.setText("INGRESABUTTER");
+                Intent intent =new Intent(this,Main2Activity.class);
+
+                intent.putExtra("nombre","Kath");
+                startActivity(intent);
+
                 break;
             case R.id.btn_facebook:
                 tvText.setText("FACEBOOKBUTTER");
